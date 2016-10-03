@@ -578,14 +578,8 @@
             var typeClass = "active";
             switch (type) {
                 case "first":
-                    typeClass = "disabled";
-                    break;
                 case "last":
-                    typeClass = "disabled";
-                    break;
                 case "prev":
-                    typeClass = "disabled";
-                    break;
                 case "next":
                     typeClass = "disabled";
                     break;
