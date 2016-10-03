@@ -572,7 +572,23 @@
         bootstrapMajorVersion: 2,
         listContainerClass: "",
         itemContainerClass: function (type, page, current) {
-            return (page === current) ? "active" : "";
+            var typeClass = "active";
+            switch (type) {
+                case "first":
+                    typeClass = "disabled";
+                    break;
+                case "last":
+                    typeClass = "disabled";
+                    break;
+                case "prev":
+                    typeClass = "disabled";
+                    break;
+                case "next":
+                    typeClass = "disabled";
+                    break;
+            }
+
+            return (page === current) ? typeClass : "";
         },
         itemContentClass: function (type, page, current) {
             return "";
